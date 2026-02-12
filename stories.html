@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - Kids Mag</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-rocket-takeoff-fill"></i> Kids Mag</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="Home1.html">Home 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Home2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="stories.html">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="form-check form-switch me-3">
+                            <input class="form-check-input" type="checkbox" id="theme-toggle">
+                            <label class="form-check-label" for="theme-toggle"><i class="bi bi-moon-stars"></i></label>
+                        </div>
+                        <a href="login.html" class="btn btn-primary rounded-pill px-4">Login</a>
+                        <a href="signup.html" class="btn btn-primary rounded-pill px-4">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-center text-primary mb-5">Magical Stories</h1>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Story 1 -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <img src="https://placehold.co/800x300?text=The+Brave+Little+Bunny" class="card-img-top"
+                            alt="Story 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">The Brave Little Bunny</h3>
+                            <p class="card-text text-muted">A heartwarming tale about a bunny who overcomes his fears to
+                                save his friends.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info text-dark">Adventure</span>
+                                <button class="btn btn-outline-primary rounded-pill"
+                                    onclick="openStory('The Brave Little Bunny')">Read Story</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Story 2 -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <img src="https://placehold.co/800x300?text=The+Flying+Elephant" class="card-img-top"
+                            alt="Story 2">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">The Flying Elephant</h3>
+                            <p class="card-text text-muted">Ellie dreams of flying high in the sky. Will her dream come
+                                true?</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning text-dark">Fantasy</span>
+                                <button class="btn btn-outline-primary rounded-pill"
+                                    onclick="openStory('The Flying Elephant')">Read Story</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Story 3 -->
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <img src="https://placehold.co/800x300?text=The+Kind+Dragon" class="card-img-top" alt="Story 3">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-bold">The Kind Dragon</h3>
+                            <p class="card-text text-muted">Not all dragons are scary. Meet Sparky, the friendliest
+                                dragon in the kingdom.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Friendship</span>
+                                <button class="btn btn-outline-primary rounded-pill"
+                                    onclick="openStory('The Kind Dragon')">Read Story</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Modal -->
+    <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="storyModalLabel">Story Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="storyModalBody">
+                    <!-- Story content injected here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
