@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Kids Mag</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-rocket-takeoff-fill"></i> Kids Mag
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end glass-panel h-100" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="Home1.html">Home 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Home2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="form-check form-switch m-0 pt-1">
+                            <input class="form-check-input" type="checkbox" id="theme-toggle" style="cursor: pointer;">
+                            <label class="form-check-label" for="theme-toggle"><i
+                                    class="bi bi-moon-stars-fill text-primary"></i></label>
+                        </div>
+                        <a href="login.html" class="btn btn-outline-primary rounded-pill px-4 btn-sm">Login</a>
+                        <a href="signup.html" class="btn btn-primary rounded-pill px-4 btn-sm shadow-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 position-relative overflow-hidden">
+        <!-- Background Bloom -->
+        <div class="shape-blob shape-1" style="top: -100px; left: -100px; opacity: 0.05;"></div>
+        <div class="shape-blob shape-3" style="bottom: -100px; right: -100px; opacity: 0.05;"></div>
+
+        <div class="container text-center position-relative z-1 fade-in-section">
+            <div class="section-title">
+                <h1 class="display-4 fw-bold">Our Awesome Services</h1>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-primary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Online Library</h4>
+                        <p class="text-muted">Access thousands of fun books anytime, anywhere.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-secondary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-joystick"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Game Zone</h4>
+                        <p class="text-muted">Play educational games that sharpen your mind.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-tertiary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Art Workshop</h4>
+                        <p class="text-muted">Learn to draw, paint, and create masterpieces.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-accent mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Coding Classes</h4>
+                        <p class="text-muted">Start your coding journey with fun projects.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-primary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Music Lessons</h4>
+                        <p class="text-muted">Learn to play instruments and read music.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-secondary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Language Lab</h4>
+                        <p class="text-muted">Learn new languages with fun interactive tools.</p>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-tertiary mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem;">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Science Experiments</h4>
+                        <p class="text-muted">Conduct safe and cool science experiments at home.</p>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 p-4 text-center border-0 shadow-sm hover-lift">
+                        <div class="icon-box bg-soft-accent mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; font-size: 2.5rem; color: var(--accent-color);">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Community</h4>
+                        <p class="text-muted">Connect with other kids and share your projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold mb-3 text-white d-flex align-items-center"><i
+                            class="bi bi-rocket-takeoff-fill me-2"></i> Kids Mag</h4>
+                    <p class="text-white-50">Inspiring the next generation of thinkers, dreamers, and doers through fun
+                        and learning.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Parent's Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p class="text-white-50">Get the latest updates delivered to your inbox.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-0" placeholder="Email" aria-label="Email">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 text-white-50 border-top border-secondary">
+                <p class="mb-0">&copy; 2026 Kids Online Magazine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top" class="back-to-top"><i class="bi bi-arrow-up"></i></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

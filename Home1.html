@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Mag - Fun Learning</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-theme="light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-rocket-takeoff-fill"></i> Kids Mag
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end glass-panel h-100" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link active" href="Home1.html">Home 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="Home2.html">Home 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <div class="form-check form-switch m-0 pt-1">
+              <input class="form-check-input" type="checkbox" id="theme-toggle" style="cursor: pointer;">
+              <label class="form-check-label" for="theme-toggle"><i
+                  class="bi bi-moon-stars-fill text-primary"></i></label>
+            </div>
+            <a href="login.html" class="btn btn-outline-primary rounded-pill px-4 btn-sm">Login</a>
+            <a href="signup.html" class="btn btn-primary rounded-pill px-4 btn-sm shadow-sm">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center position-relative overflow-hidden">
+    <!-- Background Bloom -->
+    <div class="shape-blob shape-1"></div>
+    <div class="shape-blob shape-2"></div>
+
+    <div class="container position-relative z-1 fade-in-section">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-lg-start">
+          <span class="badge bg-soft-primary text-primary mb-3 px-3 py-2 rounded-pill fw-bold">🚀 Fun Learning for
+            Kids</span>
+          <h1 class="display-3 fw-bold mb-3 lh-sm">Explore, Learn, <br><span class="text-primary">& Play!</span></h1>
+          <p class="lead mb-4 text-muted pe-lg-5">The best online magazine for smart kids. Discover amazing stories, fun
+            games, and cool facts!</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+            <a href="stories.html" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm hover-scale">Start
+              Reading</a>
+            <a href="games.html" class="btn btn-outline-primary btn-lg rounded-pill px-5 hover-scale">Play Games</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <div class="shape-blob shape-3" style="width: 300px; height: 300px; opacity: 0.1;"></div>
+            <img src="https://placehold.co/600x400/png?text=Kids+Magazine" alt="Hero Image"
+              class="img-fluid rounded-4 shadow-lg floating-element position-relative z-1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Featured Stories -->
+  <section class="py-5">
+    <div class="container fade-in-section">
+      <div class="section-title text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase ls-1">Read & Imagine</span>
+        <h2 class="display-5 fw-bold mt-2">Featured Stories</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm glass-panel hover-scale">
+            <img src="https://placehold.co/400x300?text=Space" class="card-img-top rounded-top-4" alt="Space Story">
+            <div class="card-body p-4">
+              <span class="badge bg-soft-info text-info mb-2">Adventure</span>
+              <h4 class="card-title fw-bold">Journey to Mars</h4>
+              <p class="card-text text-muted">Join the adventure to the red planet and meet friendly aliens!</p>
+              <a href="stories.html" class="btn btn-link text-decoration-none p-0 fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm glass-panel hover-scale">
+            <img src="https://placehold.co/400x300?text=Ocean" class="card-img-top rounded-top-4" alt="Ocean Story">
+            <div class="card-body p-4">
+              <span class="badge bg-soft-primary text-primary mb-2">Discovery</span>
+              <h4 class="card-title fw-bold">Deep Sea Secrets</h4>
+              <p class="card-text text-muted">What hides at the bottom of the ocean? Find out now!</p>
+              <a href="stories.html" class="btn btn-link text-decoration-none p-0 fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm glass-panel hover-scale">
+            <img src="https://placehold.co/400x300?text=Dinos" class="card-img-top rounded-top-4" alt="Dino Story">
+            <div class="card-body p-4">
+              <span class="badge bg-soft-success text-success mb-2">History</span>
+              <h4 class="card-title fw-bold">Dino Discovery</h4>
+              <p class="card-text text-muted">Travel back in time to the land of the giants.</p>
+              <a href="stories.html" class="btn btn-link text-decoration-none p-0 fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Fun Facts -->
+  <section class="py-5 bg-light position-relative overflow-hidden">
+    <div class="shape-blob shape-2" style="right: -100px; bottom: -100px; opacity: 0.05;"></div>
+    <div class="container fade-in-section position-relative z-1">
+      <div class="row align-items-center bg-white p-5 rounded-5 shadow-sm glass-panel">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+          <img src="https://placehold.co/500x350?text=Did+You+Know" class="img-fluid rounded-4 shadow hover-scale"
+            alt="Fun Facts">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <span class="badge bg-warning text-dark mb-3 rounded-pill px-3 py-2">💡 Brain Power</span>
+          <h2 class="display-5 fw-bold mb-4">Did You Know?</h2>
+          <ul class="list-unstyled fs-5 d-flex flex-column gap-3">
+            <li class="d-flex align-items-center bg-soft-primary p-3 rounded-3">
+              <i class="bi bi-check-circle-fill text-primary me-3 fs-3"></i>
+              <span>Octopuses have <strong class="text-primary">three hearts!</strong></span>
+            </li>
+            <li class="d-flex align-items-center bg-soft-success p-3 rounded-3">
+              <i class="bi bi-check-circle-fill text-success me-3 fs-3"></i>
+              <span>Honey never <strong class="text-success">spoils.</strong></span>
+            </li>
+            <li class="d-flex align-items-center bg-soft-danger p-3 rounded-3">
+              <i class="bi bi-check-circle-fill text-danger me-3 fs-3"></i>
+              <span>Can you lick your elbow? <strong class="text-danger">(Try it!)</strong></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Games Corner -->
+  <section class="py-5">
+    <div class="container text-center fade-in-section">
+      <div class="section-title text-center mb-5">
+        <span class="text-secondary fw-bold text-uppercase ls-1">Play & Win</span>
+        <h2 class="display-5 fw-bold mt-2">Games Corner</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 h-100 glass-panel shadow-sm p-4 hover-scale">
+            <div
+              class="icon-box bg-soft-info rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px;">
+              <i class="bi bi-controller fs-1 text-info"></i>
+            </div>
+            <h4 class="fw-bold">Arcade</h4>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 h-100 glass-panel shadow-sm p-4 hover-scale">
+            <div
+              class="icon-box bg-soft-success rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px;">
+              <i class="bi bi-puzzle fs-1 text-success"></i>
+            </div>
+            <h4 class="fw-bold">Puzzles</h4>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 h-100 glass-panel shadow-sm p-4 hover-scale">
+            <div
+              class="icon-box bg-soft-warning rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px;">
+              <i class="bi bi-palette fs-1 text-warning"></i>
+            </div>
+            <h4 class="fw-bold">Coloring</h4>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 h-100 glass-panel shadow-sm p-4 hover-scale">
+            <div
+              class="icon-box bg-soft-danger rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+              style="width: 80px; height: 80px;">
+              <i class="bi bi-question-circle fs-1 text-danger"></i>
+            </div>
+            <h4 class="fw-bold">Quiz</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Upcoming Events -->
+  <section class="py-5 bg-dark position-relative overflow-hidden text-white">
+    <!-- Abstract Shapes -->
+    <div class="position-absolute top-0 start-0 w-100 h-100"
+      style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%); pointer-events: none;">
+    </div>
+
+    <div class="container text-center position-relative z-1 fade-in-section">
+      <h2 class="display-5 fw-bold mb-4">Join Our Workshops</h2>
+      <p class="lead mb-5 text-white-50">Learn coding, painting, and more every weekend!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="bg-white text-dark rounded-5 p-5 shadow-lg position-relative overflow-hidden">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-soft-primary opacity-25"
+              style="pointer-events: none;"></div>
+            <div class="position-relative z-1">
+              <span class="badge bg-primary mb-3">Featured Event</span>
+              <h3 class="fw-bold mb-3">Coding for Kids - Every Saturday</h3>
+              <p class="text-muted mb-4">Start your coding journey with Scratch and Python. No prior experience needed!
+              </p>
+              <button class="btn btn-primary rounded-pill px-5 btn-lg shadow-sm hover-scale">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Gallery -->
+  <section class="py-5">
+    <div class="container fade-in-section">
+      <div class="section-title text-center mb-5">
+        <h2 class="display-5 fw-bold">Little Artists Gallery</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+1"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 1"></div>
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+2"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 2"></div>
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+3"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 3"></div>
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+4"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 4"></div>
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+5"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 5"></div>
+        <div class="col-4 col-md-4"><img src="https://placehold.co/300x300?text=Art+6"
+            class="img-fluid rounded-4 shadow-sm hover-scale w-100 object-fit-cover" alt="Art 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Newsletter -->
+  <section class="py-5 bg-soft-warning">
+    <div class="container text-center fade-in-section">
+      <h2 class="display-5 fw-bold mb-3 text-dark">Stay Updated!</h2>
+      <p class="mb-4 text-muted">Subscribe to our newsletter for the latest fun and games.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="d-flex bg-white p-2 rounded-pill shadow-sm">
+            <input type="email" class="form-control border-0 rounded-pill ps-4" placeholder="Enter your email address">
+            <button type="submit" class="btn btn-primary rounded-pill px-4 fw-bold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="fw-bold mb-3 text-white d-flex align-items-center"><i class="bi bi-rocket-takeoff-fill me-2"></i>
+            Kids Mag</h4>
+          <p class="text-white-50">Inspiring the next generation of thinkers, dreamers, and doers through fun and
+            learning.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Safety Center</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+            <li><a href="#">Parent's Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p class="text-white-50">Get the latest updates delivered to your inbox.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-0" placeholder="Email" aria-label="Email">
+              <button class="btn btn-primary" type="button"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-5 pt-4 text-white-50 border-top border-secondary">
+        <p class="mb-0">&copy; 2026 Kids Online Magazine. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="back-to-top" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
